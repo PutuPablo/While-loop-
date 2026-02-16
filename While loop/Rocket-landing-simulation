@@ -1,0 +1,37 @@
+string rocket = @"
+            /\
+           /  \
+          /----\
+         /------\
+        /--------\
+       /----------\
+       |----------|
+       |   NASA   |
+       |----------|
+       |----------|
+       |----------|
+      /------------\
+     /--------------\
+    /----------------\
+       |    ||    |
+       |    ||    |
+       |    ||    |
+      /     ||     \
+     /      ||      \
+    /       ||       \
+     ~~~~~~~~~~~~~~~~~
+";
+
+for (int i = 10; i >= 0; i--)
+{
+    Console.Clear();
+    Console.WriteLine("Rocket will be landed in " + i);
+    Console.WriteLine(rocket);
+    rocket = "\r\n" + rocket;
+    Thread.Sleep(1000);
+
+}
+Console.WriteLine("The rocket has landed!");
+Console.ReadKey();
+
+
